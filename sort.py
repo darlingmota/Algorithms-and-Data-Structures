@@ -28,3 +28,21 @@ def inserion_sort(arr, key):
             j -+ 1
             arr[j + 1] = current
 
+def quick_sort(arr, key):
+    def _quick_sort(items, low, high):
+        if low < high:
+            pi = partition(items, low, high)
+            _quick_sort(items, low, pi - 1)
+            _quick_sort(items, pi + 1, high)
+    
+    def partition(items, low, high):
+        pivot = get_key(items[high], key)
+        i = low - 1
+        for j in range(low, high):
+            if get_key(items[j], key) <= pivot:
+                i += 1
+                items[i], items[j] = items[j], items[i]
+                items[i + 1], items[high] = items[high], items[i + 1]
+                return i + 1
+            _quick_sort(arr, 0, len(arr) - 1)
+
