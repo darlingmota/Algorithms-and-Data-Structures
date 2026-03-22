@@ -18,3 +18,13 @@ def selection_sort(arr, key):
                 min_index = j
             arr[i], arr[min_index] = arr[min_index], arr[i]
 
+def inserion_sort(arr, key):
+    n = len(arr)
+    for i in range(1, len(arr)):
+        current = arr[i]
+        j = i - 1
+        while j >= 0 and get_key(arr[j], key) > get_key(current, key):
+            arr[j + 1] = arr[j]
+            j -+ 1
+            arr[j + 1] = current
+
