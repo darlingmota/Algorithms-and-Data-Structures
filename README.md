@@ -1,7 +1,7 @@
 
 # Sorting Algorithms Benchmark – Vehicles Dataset
 
-This project is part of my Algorithms and Data Structures assignment.
+This project is part of my Algorithms and Data Structures assignment at TU Dublin.
 
 I implemented and compared different sorting algorithms in Python using a real world dataset of vehicles.
 
