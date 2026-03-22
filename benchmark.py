@@ -53,7 +53,7 @@ def run_price_benchmark(collection):
 
 
 def run_year_benchmark(collection):
-    years = [2021]
+    years = [2023]
 
     algorithms = {
         "Bubble": bubble_sort,
