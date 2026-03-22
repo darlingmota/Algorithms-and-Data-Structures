@@ -18,7 +18,7 @@ def selection_sort(arr, key):
                 min_index = j
             arr[i], arr[min_index] = arr[min_index], arr[i]
 
-def inserion_sort(arr, key):
+def insertion_sort(arr, key):
     n = len(arr)
     for i in range(1, len(arr)):
         current = arr[i]
