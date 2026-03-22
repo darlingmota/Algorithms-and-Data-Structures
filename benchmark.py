@@ -35,7 +35,7 @@ def run_price_benchmark(collection):
     results = []
 
     for size in sizes:
-        subset = collection.get_subset(size)[:50]  # temporarily limit to 50 for debugging
+        subset = collection.get_subset(size)
         row = {"Size": size}
 
         print(f"\nTesting size: {size}")
@@ -66,7 +66,7 @@ def run_year_benchmark(collection):
     results = []
 
     for year in years:
-        data = collection.filter_by_year(year)[:50]  # temporarily limit to 50 for debugging
+        data = collection.filter_by_year(year) 
         row = {"Year": year}
 
         print(f"\nTesting year: {year}")
