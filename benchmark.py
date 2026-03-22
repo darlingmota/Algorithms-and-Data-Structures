@@ -22,7 +22,7 @@ def average_time(sort_func, data, key, runs=1):
 
 
 def run_price_benchmark(collection):
-    sizes = [250]
+    sizes = [500]
 
     algorithms = {
         "Bubble": bubble_sort,
@@ -53,7 +53,7 @@ def run_price_benchmark(collection):
 
 
 def run_year_benchmark(collection):
-    years = [2020, 2021, 2022, 2023, 2024]
+    years = [2020]
 
     algorithms = {
         "Bubble": bubble_sort,
