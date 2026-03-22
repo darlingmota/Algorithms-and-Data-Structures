@@ -22,7 +22,7 @@ def average_time(sort_func, data, key, runs=1):
 
 
 def run_price_benchmark(collection):
-    sizes = [500]
+    sizes = [1000]
 
     algorithms = {
         "Bubble": bubble_sort,
