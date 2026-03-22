@@ -2,9 +2,9 @@ import time
 
 from sort import bubble_sort, selection_sort, insertion_sort, quick_sort, merge_sort
 
-
+#measures time taken by one sorting algorithim
 def measure_time(sort_func, data, key):
-    arr = data[:]
+    arr = data[:]# copy list so original is not changed
 
     start = time.perf_counter()
     sort_func(arr, key)
@@ -13,14 +13,14 @@ def measure_time(sort_func, data, key):
     return end - start
 
 
-def average_time(sort_func, data, key, runs=1):
+def average_time(sort_func, data, key, runs=1):# runs algorithm multiple times and resturns average time
     times = []
     for _ in range(runs):
         t = measure_time(sort_func, data, key)
         times.append(t)
     return sum(times) / len(times)
 
-
+# benchmark for price
 def run_price_benchmark(collection):
     sizes = [250, 500, 1000, 2000, 8000, 16000, 32000, 64000]
 
@@ -51,7 +51,7 @@ def run_price_benchmark(collection):
 
     return results
 
-
+#benchmark for price
 def run_year_benchmark(collection):
     years = [2021, 2022, 2023, 2024]
 
